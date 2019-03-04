@@ -1,0 +1,60 @@
+html, body {
+  background: lightblue;
+  font-family: cursive;
+  font-size: 19px;
+  text-shadow: 2px 1px grey;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+#header {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 50px; }
+  #header header, #header h1 {
+    text-align: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%; }
+
+#textbox {
+  padding: 10px;
+  flex-direction: column; }
+  #textbox textarea {
+    resize: none;
+    width: 714px;
+    height: 90px; }
+
+#border {
+  border-style: outset;
+  border-radius: 5px;
+  background: #b0b4c1;
+  border-color: black; }
+
+#wrapper {
+  height: 520px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; }
+  #wrapper #button {
+    font-size: 20px;
+    height: 85px;
+    width: 85px; }
+  #wrapper #button1 {
+    font-size: 20px;
+    height: 85px;
+    width: 176px; }
+
+#ScientificCal {
+  margin-left: 98px; }
+
+footer {
+  padding: 10px;
+  text-align: center; }
+
+/*# sourceMappingURL=cal.css.map */

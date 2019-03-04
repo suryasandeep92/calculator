@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/cal.css">
+        <title>Calculator</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="border">
+        <div id="header">
+        <header>
+            <h1>Calculator</h1>
+        </header>
+        </div>
+        <div id="textbox">
+            <textarea readonly id="resultBox" maxlength="25"></textarea>
+        </div>
+        <div id="wrapper">
+           <div id="StandardCal">
+               <form name="StdCal">
+               <div id="row0">
+                 <input type="button" value="AC" onclick="clearValue()" id="button">
+                 <input type="button" value="C" onclick="clearValue()" id="button">
+                 <input type="button" value="Del" onclick="backspace()" id="button">
+                 <input type="button" value="%" onclick="addValue('%')" id="button">
+               </div>
+              <div id="row1">
+                 <input type="button" value="7" onclick="addValue('7')" id="button">
+                 <input type="button" value="8" onclick="addValue('8')" id="button">
+                 <input type="button" value="9" onclick="addValue('9')" id="button">
+                 <input type="button" value="/" onclick="addValue('/')" id="button">
+              </div>
+              <div id="row2">
+                  <input type="button" value="4" onclick="addValue('4')" id="button">
+                  <input type="button" value="5" onclick="addValue('5')" id="button">
+                  <input type="button" value="6" onclick="addValue('6')" id="button">
+                  <input type="button" value="*" onclick="addValue('*')" id="button">
+              </div>
+              <div id="row3">
+                 <input type="button" value="1" onclick="addValue('1')" id="button">
+                 <input type="button" value="2" onclick="addValue('2')" id="button">
+                 <input type="button" value="3" onclick="addValue('3')" id="button">
+                 <input type="button" value="-" onclick="addValue('-')" id="button">
+              </div>
+              <div id="row4">
+                 <input type="button" value="+/-" onclick="addValue" id="button">
+                 <input type="button" value="0" onclick="addValue('0')" id="button">
+                 <input type="button" value="." onclick="addValue('.')" id="button">
+                 <input type="button" value="+" onclick="addValue('+')" id="button">
+              </div>
+              <div id="row5">
+                 <input type="button" value="(" onclick="addValue('(')" id="button">
+                 <input type="button" value=")" onclick="addValue(')')" id="button">
+                 <input type="button" value="=" onclick="operation()" id="button1">
+              </div>
+            </form>
+        </div>
+          <div id="ScientificCal">
+              <form name="SciCal">
+              <div id="row6">
+                  <input type="button" value="Pi" onclick="addValue('3.14')" id="button">
+                  <input type="button" value="x*n" onclick="addValue('**')" id="button">
+                  <input type="button" value="yrootx" onclick="" id="button">
+              </div>
+              <div id="row7">
+                  <input type="button" value="logE" onclick="logValue()" id="button">
+                  <input type="button" value="SqRt" onclick="squareRoot()" id="button">
+                  <input type="button" value="x2" onclick="addValue('**2')" id="button">
+               </div>
+              <div id="row8">
+                  <input type="button" value="sin" onclick="sinValue()" id="button">
+                  <input type="button" value="cos" onclick="cosValue()" id="button">
+                  <input type="button" value="tan" onclick="tanValue()" id="button">
+              </div>
+              </form>
+          </div>
+        </div>
+         <footer>Copyrights &copy; 2017, Gnana Suman Kumar</footer>
+        </div>
+        <script src="JS/cal.js"></script>
+    </body>
+</html>

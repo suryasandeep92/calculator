@@ -1,0 +1,67 @@
+$padding: 10px;
+$bgColor: lightblue;
+$backColor: #b0b4c1;
+
+html, body {
+    background: $bgColor;
+    font-family: cursive; 
+    font-size: 19px;
+    text-shadow: 2px 1px grey;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#header {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 50px;
+    header, h1 {
+        text-align: center;
+        margin: 0; border: 0; padding: 0;
+        width: 100%;
+    }
+}
+#textbox {
+    padding: $padding;
+    flex-direction: column;
+    
+textarea {
+    resize: none;
+    width: 714px;
+    height: 90px;
+    }
+}
+#border {
+    border-style: outset;
+    border-radius: 5px;
+    background: $backColor;
+    border-color: black;
+}
+#wrapper {
+    height: 520px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    #button {
+        font-size: 20px;
+        height: 85px;
+        width: 85px;
+    }
+    #button1 {
+            font-size: 20px;
+            height: 85px;
+            width: 176px;
+        }
+}
+
+#ScientificCal {
+    margin-left: 98px;
+}
+footer {
+    padding: $padding;
+    text-align: center;
+}
